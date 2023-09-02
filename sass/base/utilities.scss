@@ -1,0 +1,117 @@
+.heading__details {
+	display: inline;
+
+	&-first {
+		display: flex;
+
+		justify-content: space-between;
+	}
+
+	&-one {
+		width: 75%;
+		display: flex;
+		align-items: center;
+		gap: 0.8rem;
+		margin-bottom: 2.6rem;
+	}
+
+	&-two {
+		width: 25%;
+		padding: 0.6rem 0.8rem 0.6rem 4.2rem;
+		display: flex;
+		gap: 0.6rem;
+
+		&--items {
+			font-size: 1.2rem;
+			font-weight: bolder;
+		}
+	}
+}
+
+.heading__testimonials {
+	width: 100%;
+
+	&-one {
+		float: left;
+		width: 45%;
+		height: auto;
+		text-align: left;
+		clear: both;
+		box-shadow: 0 0 10px rgba($color-black, 0.2);
+		border-radius: 16px;
+		padding: 0.8rem 0.7rem 0.8rem 0.8rem;
+	}
+
+	&-two {
+		transform: translateY(-14rem);
+		float: right;
+		clear: both;
+
+		width: 45%;
+		height: auto;
+		text-align: left;
+		box-shadow: 0 0 10px rgba($color-black, 0.2);
+		border-radius: 16px;
+		padding: 0.8rem 0.7rem 0.8rem 0.8rem;
+		background-color: rgba($color-orange, 0.2);
+	}
+
+	&-green {
+		float: left;
+		width: 45%;
+		height: auto;
+		text-align: left;
+		clear: both;
+		box-shadow: 0 0 10px rgba($color-black, 0.2);
+		border-radius: 16px;
+		padding: 0.8rem 0.7rem 0.8rem 0.8rem;
+		transform: translateY(-12rem);
+		background-color: $color-green-light;
+	}
+
+	&-pink {
+		transform: translateY(-25.5rem);
+		float: right;
+		width: 45%;
+		height: auto;
+		text-align: left;
+		clear: both;
+		box-shadow: 0 0 10px rgba($color-black, 0.2);
+		border-radius: 16px;
+		padding: 0.8rem 0.7rem 0.8rem 0.8rem;
+		background-color: $color-pink-light;
+	}
+
+	&-violet {
+		float: left;
+		width: 45%;
+		height: auto;
+		text-align: left;
+		clear: both;
+		box-shadow: 0 0 10px rgba($color-black, 0.2);
+		border-radius: 16px;
+		padding: 0.8rem 0.7rem 0.8rem 0.8rem;
+		transform: translateY(-24rem);
+		background-color: #e9e7fd;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+	}
+
+	&-wheat {
+		float: right;
+		width: 45%;
+		height: auto;
+		text-align: left;
+		clear: both;
+		box-shadow: 0 0 10px rgba($color-black, 0.2);
+		border-radius: 16px;
+		padding: 0.8rem 0.7rem 0.8rem 0.8rem;
+		transform: translateY(-27.1rem);
+		background-color: $color-wheat;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+	}
+}
+.right {
+	float: right;
+}

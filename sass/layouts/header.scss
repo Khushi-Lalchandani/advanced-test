@@ -1,0 +1,54 @@
+.heading {
+	// padding: 0 3rem;
+	margin: 0 3rem;
+
+	&__box {
+		box-shadow: 0 0 10px rgba($color-black, 0.2);
+		margin-top: 2rem;
+		background-color: $color-white;
+		border-radius: 16px;
+		padding: 2rem;
+		height: 95%;
+	}
+	&__projects {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 3rem;
+	}
+}
+.header {
+	padding: 0 3rem;
+	display: flex;
+	justify-content: space-between;
+	gap: 4rem;
+	&__primary {
+		font-size: 2rem;
+	}
+}
+
+.heading-tertiary {
+	font-size: 0.6rem;
+	color: $color-gray;
+	font-weight: bolder;
+
+	&-dot {
+		font-size: 0.8rem;
+	}
+
+	&--dot {
+		display: flex;
+		gap: 0.8rem;
+		align-items: flex-start;
+	}
+}
+
+.flex {
+	display: flex;
+	gap: 9rem;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.4rem;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid $color-gray-light-1;
+}

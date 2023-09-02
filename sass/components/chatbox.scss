@@ -1,0 +1,42 @@
+.flex2 {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+
+	&_one {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		justify-content: center;
+		padding: 1.2rem;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid $color-gray-dark;
+		}
+
+		&-one {
+			display: flex;
+			flex-direction: column;
+			gap: 0.4rem;
+
+			&--text {
+				font-size: 0.8rem;
+				font-weight: 600;
+				color: $color-gray-dark-1;
+
+				padding: 0 0.8rem;
+			}
+		}
+	}
+}
+.inner-flex {
+	display: flex;
+	padding: 0 0.8rem;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-special {
+	background-color: $color-white;
+	border-radius: 12px;
+	transform: translateX(1.4rem) scale(1.16);
+}

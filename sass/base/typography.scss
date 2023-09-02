@@ -1,0 +1,53 @@
+.head__secondary {
+	font-size: 1.4rem;
+	font-weight: bolder;
+}
+.name {
+	text-align: center;
+	margin-top: 0.8rem;
+}
+.date {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+.small-headings {
+	font-size: 1rem;
+	font-weight: bold;
+	margin-top: 0.4rem;
+}
+.light {
+	text-align: center;
+	font-size: 1rem;
+	text-align: center;
+	font-weight: 500;
+}
+.blue-heading {
+	color: $color-blue;
+	font-weight: bolder;
+}
+.orange-heading {
+	color: $color-orange;
+	font-weight: bolder;
+}
+.green-heading {
+	color: $color-green;
+	font-weight: bolder;
+}
+.pink-heading {
+	color: $color-pink;
+	font-weight: bolder;
+}
+
+.number {
+	font-size: 1rem;
+	font-weight: bolder;
+	margin-bottom: 0.3rem;
+}
+
+.date1 {
+	font-size: 0.8rem;
+	text-align: right;
+	padding: 0 0.8rem;
+
+	color: $color-gray-dark;
+}

@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 62.5%;
+	font-family: "Times New Roman", Times, serif;
+	background-color: $color-background-primary;
+	padding: 3rem;
+}
+.project {
+	border-radius: 50px;
+	padding: 2rem;
+	border: 1px solid black;
+	background-color: $color-background;
+	display: flex;
+	height: 53rem;
+	position: relative;
+}
+.section-chats {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5rem;
+	transform: translate(1rem, -0.5rem);
+	width: 33rem;
+}
+.nav {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+	transform: translateX(2.5rem);
+	margin-bottom: 2.4rem;
+
+	&__icon {
+		font-size: 1.8rem;
+	}
+
+	&__notification {
+		font-size: 1.6rem;
+		position: relative;
+	}
+	&__line {
+		font-size: 2rem;
+		font-weight: light;
+		color: $color-gray;
+	}
+	&__name {
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+}

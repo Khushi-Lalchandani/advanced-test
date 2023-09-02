@@ -1,0 +1,58 @@
+.imgs {
+	display: flex;
+	gap: 0.4rem;
+	margin-top: 2.5rem;
+}
+.man {
+	border-collapse: collapse;
+	height: 2rem;
+
+	width: 2rem;
+	border-radius: 50%;
+	margin-right: -0.8rem;
+}
+.current {
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+	margin-left: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__blue {
+		background-color: $color-blue;
+	}
+	&__orange {
+		background-color: $color-orange;
+	}
+	&__pink {
+		background-color: $color-pink;
+	}
+	&__green {
+		background-color: $color-green;
+	}
+}
+.duration {
+	margin-left: auto;
+	padding: 0.4rem 0.8rem;
+	border-radius: 18px;
+
+	&__blue {
+		background-color: rgba($color-blue, 0.2);
+	}
+	&__white {
+		background-color: $color-white;
+	}
+}
+
+.nav__user {
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+}
+.user1 {
+	height: 2.8rem;
+	width: 2.8rem;
+	border-radius: 50%;
+}
