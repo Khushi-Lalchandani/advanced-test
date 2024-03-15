@@ -1,23 +1,27 @@
 .head__secondary {
-	font-size: 1.4rem;
+	font-size: 2rem;
 	font-weight: bolder;
 }
 .name {
 	text-align: center;
-	margin-top: 0.8rem;
+	margin-top: 1.2rem;
 }
 .date {
-	font-size: 1.2rem;
+	font-size: 2rem;
 	font-weight: bold;
 }
 .small-headings {
-	font-size: 1rem;
+	font-size: 1.6rem;
 	font-weight: bold;
-	margin-top: 0.4rem;
+	margin-top: 1rem;
+
+	&--center {
+		font-size: 1.6rem;
+		margin-top: 0.5rem;
+	}
 }
 .light {
-	text-align: center;
-	font-size: 1rem;
+	font-size: 1.6rem;
 	text-align: center;
 	font-weight: 500;
 }
@@ -37,9 +41,17 @@
 	color: $color-pink;
 	font-weight: bolder;
 }
+.violet-heading {
+	color: $color-violet-dark;
+	font-weight: bolder;
+}
+.wheat-heading {
+	color: $color-wheat-dark;
+	font-weight: bolder;
+}
 
 .number {
-	font-size: 1rem;
+	font-size: 2rem;
 	font-weight: bolder;
 	margin-bottom: 0.3rem;
 }

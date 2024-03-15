@@ -3,11 +3,13 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-body {
+html {
 	font-size: 62.5%;
 	font-family: "Times New Roman", Times, serif;
-	background-color: $color-background-primary;
 	overflow-x: hidden;
+}
+body {
+	background-color: $color-background-primary;
 }
 .project {
 	border-radius: 50px;
@@ -26,12 +28,12 @@ body {
 	}
 }
 .section-chats {
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 5rem;
-	transform: translate(1rem, -0.5rem);
-	width: 33rem;
+	// position: absolute;
+	// top: 0;
+	// right: 0;
+	// padding: 5rem;
+	// transform: translate(1rem, -0.5rem);
+	// width: 33rem;
 }
 .nav {
 	display: flex;

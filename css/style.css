@@ -3,11 +3,13 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
+html {
   font-size: 62.5%;
   font-family: "Times New Roman", Times, serif;
-  background-color: #f3f6fd;
   overflow-x: hidden; }
+
+body {
+  background-color: #f3f6fd; }
 
 .project {
   border-radius: 50px;
@@ -21,14 +23,6 @@ body {
     flex-direction: column;
     gap: 3.2rem;
     align-items: center; }
-
-.section-chats {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 5rem;
-  transform: translate(1rem, -0.5rem);
-  width: 33rem; }
 
 .nav {
   display: flex;
@@ -72,11 +66,11 @@ body {
   display: flex;
   flex-direction: column; }
   .tab__icon {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 4rem;
     color: #bbb;
     font-weight: bold;
-    padding: 1rem; }
+    padding: 1.2rem; }
     .tab__icon:hover {
       cursor: pointer;
       border-radius: 50%;
@@ -92,12 +86,10 @@ body {
     background-color: black; }
 
 .dot_menu {
-  float: right;
-  font-size: 0.8rem;
-  transform: translateY(-0.6rem); }
+  font-size: 1.5rem; }
 
 .sparkle {
-  font-size: 0.8rem;
+  font-size: 2rem;
   color: #fff; }
 
 .flex__icons {
@@ -117,22 +109,22 @@ body {
   font-size: 1rem; }
 
 .search__bar {
-  font-size: 1rem;
+  font-size: 1.6rem;
   border-radius: 20px;
   padding: 0.6rem;
   border: 1px solid #000; }
 
 .bar1 {
-  margin-top: 0.4rem;
-  height: 0.6rem;
+  margin-top: 1rem;
+  height: 0.8rem;
   width: 100%;
   border-radius: 12px;
   background-color: #eee; }
 
 .bar2 {
-  height: 0.6rem;
+  height: 0.8rem;
   border-radius: 12px;
-  transform: translateY(-0.6rem); }
+  transform: translateY(-0.751rem); }
   .bar2__blue {
     width: 90%;
     background-color: #60aae6; }
@@ -146,11 +138,11 @@ body {
     width: 20%;
     background-color: #d039b5; }
   .bar2__wheat {
-    width: 90%;
-    background-color: #fde5cc; }
+    width: 60%;
+    background-color: #d99041; }
   .bar2__violet {
-    width: 90%;
-    background-color: #e9e7fd; }
+    width: 45%;
+    background-color: #8074f9; }
 
 .imgs {
   display: flex;
@@ -159,14 +151,14 @@ body {
 
 .man {
   border-collapse: collapse;
-  height: 2rem;
-  width: 2rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   margin-right: -0.8rem; }
 
 .current {
-  height: 2rem;
-  width: 2rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   margin-left: 1rem;
   display: flex;
@@ -180,10 +172,14 @@ body {
     background-color: #d039b5; }
   .current__green {
     background-color: #36d33b; }
+  .current__violet {
+    background-color: #8074f9; }
+  .current__wheat {
+    background-color: #d99041; }
 
 .duration {
   margin-left: auto;
-  padding: 0.4rem 0.8rem;
+  padding: 0.6rem 0.8rem;
   border-radius: 18px; }
   .duration__blue {
     background-color: rgba(96, 170, 230, 0.2); }
@@ -242,7 +238,13 @@ body {
     border-radius: 16px;
     padding: 2rem;
     overflow-y: scroll;
-    height: 50rem; }
+    height: 50rem;
+    width: 70rem; }
+    .heading__box::-webkit-scrollbar {
+      width: 10px; }
+    .heading__box::-webkit-scrollbar-thumb {
+      border-radius: 50px;
+      background: #e9e7fd; }
   .heading__projects {
     display: flex;
     align-items: center;
@@ -253,17 +255,18 @@ body {
   padding: 0 3rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 3rem;
-  gap: 5rem; }
+  gap: 12rem; }
   .header__primary {
-    font-size: 2rem; }
+    font-size: 3.2rem; }
 
 .heading-tertiary {
-  font-size: 0.6rem;
+  font-size: 1.6rem;
   color: #bbb;
   font-weight: bolder; }
   .heading-tertiary-dot {
-    font-size: 0.8rem; }
+    font-size: 1.4rem; }
   .heading-tertiary--dot {
     display: flex;
     gap: 0.8rem;
@@ -279,25 +282,27 @@ body {
   border-bottom: 1px solid #ccc; }
 
 .head__secondary {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: bolder; }
 
 .name {
   text-align: center;
-  margin-top: 0.8rem; }
+  margin-top: 1.2rem; }
 
 .date {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold; }
 
 .small-headings {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  margin-top: 0.4rem; }
+  margin-top: 1rem; }
+  .small-headings--center {
+    font-size: 1.6rem;
+    margin-top: 0.5rem; }
 
 .light {
-  text-align: center;
-  font-size: 1rem;
+  font-size: 1.6rem;
   text-align: center;
   font-weight: 500; }
 
@@ -317,8 +322,16 @@ body {
   color: #d039b5;
   font-weight: bolder; }
 
+.violet-heading {
+  color: #8074f9;
+  font-weight: bolder; }
+
+.wheat-heading {
+  color: #d99041;
+  font-weight: bolder; }
+
 .number {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bolder;
   margin-bottom: 0.3rem; }
 
@@ -340,34 +353,47 @@ body {
     gap: 0.8rem;
     margin-bottom: 2.6rem; }
   .heading__details-two {
-    width: 25%;
+    width: 15%;
     padding: 0.6rem 0.8rem 0.6rem 4.2rem;
     display: flex;
-    gap: 0.6rem; }
+    gap: 0.8rem; }
     .heading__details-two--items {
-      font-size: 1.2rem;
+      font-size: 1.8rem;
       font-weight: bolder; }
+
+.heading__testimonials--one-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
 
 .heading__testimonials-one {
   float: left;
-  width: 48%;
+  width: 47%;
   height: auto;
   text-align: left;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
-  padding: 0.8rem 0.7rem 0.8rem 0.8rem;
-  margin-bottom: 3.2rem; }
+  padding: 1.8rem 1.2rem 1.8rem 1.8rem;
+  margin-bottom: 6rem; }
+  .heading__testimonials-one:hover {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transform: translateY(-0.3rem) scale(1.01); }
 
 .heading__testimonials-two {
   float: right;
-  width: 48%;
+  width: 47%;
   height: auto;
   text-align: left;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
-  padding: 0.8rem 0.7rem 0.8rem 0.8rem;
+  padding: 1.8rem 1.2rem 1.8rem 1.8rem;
   background-color: rgba(245, 86, 38, 0.2);
-  margin-bottom: 3.2rem; }
+  margin-bottom: 6rem; }
+  .heading__testimonials-two:hover {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transform: translateY(-0.3rem) scale(1.01); }
 
 .heading__testimonials-green {
   background-color: #b4f1ce; }
@@ -382,4 +408,4 @@ body {
   background-color: #fde5cc; }
 
 .right {
-  float: right; }
+  text-align: right; }
