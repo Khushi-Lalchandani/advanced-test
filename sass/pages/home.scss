@@ -7,7 +7,7 @@ body {
 	font-size: 62.5%;
 	font-family: "Times New Roman", Times, serif;
 	background-color: $color-background-primary;
-	padding: 3rem;
+	overflow-x: hidden;
 }
 .project {
 	border-radius: 50px;
@@ -15,8 +15,15 @@ body {
 	border: 1px solid black;
 	background-color: $color-background;
 	display: flex;
-	height: 53rem;
-	position: relative;
+	width: 120rem;
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		gap: 3.2rem;
+
+		align-items: center;
+	}
 }
 .section-chats {
 	position: absolute;

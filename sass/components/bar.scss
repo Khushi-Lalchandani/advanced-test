@@ -1,49 +1,48 @@
 .search {
-  margin-top: 0.6rem;
-  &__bar {
-    font-size: 1.6rem;
-    border-radius: 16px;
-    border: none;
-    position: relative;
-  }
-  &__label {
-    position: absolute;
-    transform: translate(1rem, -1.35rem);
-    display: flex;
-    gap: 3px;
-    color: $color-gray;
-    font-size: 0.8rem;
-    font-weight: 500;
-  }
+	// margin-top: 0.6rem;
+	&__bar {
+		font-size: 1rem;
+		border-radius: 20px;
+		padding: 0.6rem;
+		border: 1px solid $color-black;
+	}
 }
 
 .bar1 {
-  margin-top: 0.4rem;
-  height: 0.6rem;
-  width: 100%;
-  border-radius: 12px;
-  background-color: $color-gray-light;
+	margin-top: 0.4rem;
+	height: 0.6rem;
+	width: 100%;
+	border-radius: 12px;
+	background-color: $color-gray-light;
 }
 .bar2 {
-  height: 0.6rem;
-  border-radius: 12px;
-  transform: translateY(-0.6rem);
+	height: 0.6rem;
+	border-radius: 12px;
+	transform: translateY(-0.6rem);
 
-  &__blue {
-    width: 90%;
-    background-color: $color-blue;
-  }
+	&__blue {
+		width: 90%;
+		background-color: $color-blue;
+	}
 
-  &__orange {
-    width: 30%;
-    background-color: $color-orange;
-  }
-  &__green {
-    width: 50%;
-    background-color: $color-green;
-  }
-  &__pink {
-    width: 20%;
-    background-color: $color-pink;
-  }
+	&__orange {
+		width: 30%;
+		background-color: $color-orange;
+	}
+	&__green {
+		width: 50%;
+		background-color: $color-green;
+	}
+	&__pink {
+		width: 20%;
+		background-color: $color-pink;
+	}
+	&__wheat {
+		width: 90%;
+		background-color: $color-wheat;
+	}
+	&__violet {
+		width: 90%;
+		background-color: $color-violet;
+	}
 }

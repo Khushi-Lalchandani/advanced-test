@@ -1,222 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/icon_font.css" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/icon_font.css" />
+		<link rel="stylesheet" href="css/icon-font.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-    <link rel="stylesheet" href="css/icon-font.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<section class="project">
+			<section class="project__main">
+				<div class="menu">
+					<div class="menu__line1"></div>
+					<div class="menu__line2"></div>
+					<div class="menu__line1"></div>
+				</div>
 
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <section class="project">
-      <section class="project__main">
-        <div class="menu">
-          <div class="menu__line1"></div>
-          <div class="menu__line2"></div>
-          <div class="menu__line1"></div>
-        </div>
+				<div class="tab">
+					<ion-icon class="tab__icon tab__icon1" name="home-outline"></ion-icon>
+					<ion-icon class="tab__icon" name="person-circle-outline"></ion-icon>
+					<ion-icon class="tab__icon" name="calendar-outline"></ion-icon>
+					<ion-icon class="tab__icon" name="chatbox-outline"></ion-icon>
+					<ion-icon class="tab__icon" name="alarm-outline"></ion-icon>
+					<ion-icon class="tab__icon" name="settings-outline"></ion-icon>
+				</div>
+			</section>
+			<div class="heading">
+				<div class="header">
+					<h1 class="header__primary">Portfolio</h1>
+					<div class="search">
+						<input
+							type="text"
+							class="search__bar"
+							id="search__bar"
+							placeholder="Search"
+						/>
+					</div>
+				</div>
+				<div class="heading__box">
+					<div class="heading__projects">
+						<h2 class="head__secondary">Projects</h2>
+						<div class="date">July, 2020</div>
+					</div>
 
-        <div class="tab">
-          <ion-icon class="tab__icon tab__icon1" name="home-outline"></ion-icon>
-          <ion-icon class="tab__icon" name="person-circle-outline"></ion-icon>
-          <ion-icon class="tab__icon" name="calendar-outline"></ion-icon>
-          <ion-icon class="tab__icon" name="chatbox-outline"></ion-icon>
-          <ion-icon class="tab__icon" name="alarm-outline"></ion-icon>
-          <ion-icon class="tab__icon" name="settings-outline"></ion-icon>
-        </div>
-      </section>
-      <div class="heading">
-        <div class="header">
-          <h1 class="header__primary">Portfolio</h1>
-          <div class="search">
-            <input type="text" class="search__bar" id="search__bar" />
-            <label class="search__label" for="search__bar"
-              ><ion-icon name="search-outline"></ion-icon>Search</label
-            >
+					<div class="heading__details">
+						<div class="heading__details-first">
+							<div class="heading__details-one">
+								<div class="heading__details-num--one">
+									<div class="number"><span>45</span></div>
+									<div class="heading-tertiary--dot">
+										<h4 class="heading-tertiary heading-tertiary-dot">
+											In progress
+										</h4>
+										<h4 class="heading-tertiary heading-tertiary-dot">
+											&SmallCircle;
+										</h4>
+									</div>
+								</div>
+
+								<div class="heading__details-num--one">
+									<div class="number"><span>12</span></div>
+									<div class="heading-tertiary--dot">
+										<h4 class="heading-tertiary heading-tertiary-dot">
+											In progress
+										</h4>
+										<h4 class="heading-tertiary heading-tertiary-dot">
+											&SmallCircle;
+										</h4>
+									</div>
+								</div>
+
+								<div class="heading__details-num--one">
+									<div class="number"><span>10</span></div>
+									<div class="heading-tertiary--dot">
+										<h4 class="heading-tertiary heading-tertiary-dot">
+											Upcoming
+										</h4>
+										<h4 class="heading-tertiary heading-tertiary-dot">
+											&SmallCircle;
+										</h4>
+									</div>
+								</div>
+								<div class="heading__details-num--one">
+									<div class="number"><span>67</span></div>
+									<div class="heading-tertiary--dot">
+										<h4 class="heading-tertiary heading-tertiary-dot">
+											Total projects
+										</h4>
+										<h4 class="heading-tertiary heading-tertiary-dot">
+											&SmallCircle;
+										</h4>
+									</div>
+								</div>
+							</div>
+							<div class="heading__details-two">
+								<ion-icon
+									class="heading__details-two--items"
+									name="menu-outline"
+								></ion-icon>
+								<ion-icon
+									class="heading__details-two--items"
+									name="grid-outline"
+								></ion-icon>
+							</div>
+						</div>
+					</div>
+					<div class="heading__testimonials">
+						<div class="heading__testimonials-one">
+							<div class="heading__testimonials--one-date">
+								<h4 class="heading-tertiary">July 2,2020</h4>
+								<ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
+							</div>
+							<p class="date name">Web Designing</p>
+							<p class="small-headings light">Prototyping</p>
+							<p class="small-headings">Progress</p>
+							<div class="bar1"></div>
+							<div class="bar2 bar2__blue"></div>
+							<span class="small-headings right">90%</span>
+							<div class="imgs">
+								<img src="imgs/man1.avif" alt="User" class="man" />
+								<img src="imgs/woman1.avif" alt="User" class="man" />
+								<div class="current current__blue">
+									<ion-icon class="sparkle" name="sparkles"></ion-icon>
+								</div>
+								<div class="duration duration__blue">
+									<p class="small-headings blue-heading">2 days left</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="heading__testimonials">
+						<div class="heading__testimonials-two">
+							<div class="heading__testimonials--one-date">
+								<h4 class="heading-tertiary">July 5,2020</h4>
+								<ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
+							</div>
+							<p class="date name">Mobile App</p>
+							<p class="small-headings light">Prototyping</p>
+							<p class="small-headings">Progress</p>
+							<div class="bar1"></div>
+							<div class="bar2 bar2__orange"></div>
+							<span class="small-headings right">30%</span>
+							<div class="imgs">
+								<img src="imgs/man2.avif" alt="User" class="man" />
+								<img src="imgs/woman2.avif" alt="User" class="man" />
+								<div class="current current__orange">
+									<ion-icon class="sparkle" name="sparkles"></ion-icon>
+								</div>
+								<div class="duration duration__white">
+									<p class="small-headings orange-heading">3 weeks left</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="heading__testimonials">
+						<div class="heading__testimonials-one heading__testimonials-green">
+							<div class="heading__testimonials--one-date">
+								<h4 class="heading-tertiary">July 5,2020</h4>
+								<ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
+							</div>
+							<p class="date name">Mobile App</p>
+							<p class="small-headings light">Prototyping</p>
+							<p class="small-headings">Progress</p>
+							<div class="bar1"></div>
+							<div class="bar2 bar2__green"></div>
+							<span class="small-headings right">30%</span>
+							<div class="imgs">
+								<img src="imgs/man2.avif" alt="User" class="man" />
+								<img src="imgs/woman2.avif" alt="User" class="man" />
+								<div class="current current__green">
+									<ion-icon class="sparkle" name="sparkles"></ion-icon>
+								</div>
+								<div class="duration duration__white">
+									<p class="small-headings green-heading">3 weeks left</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="heading__testimonials">
+						<div class="heading__testimonials-two heading__testimonials-pink">
+							<div class="heading__testimonials--one-date">
+								<h4 class="heading-tertiary">July 5,2020</h4>
+								<ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
+							</div>
+							<p class="date name">Mobile App</p>
+							<p class="small-headings light">Prototyping</p>
+							<p class="small-headings">Progress</p>
+							<div class="bar1"></div>
+							<div class="bar2 bar2__pink"></div>
+							<span class="small-headings right">30%</span>
+							<div class="imgs">
+								<img src="imgs/man2.avif" alt="User" class="man" />
+								<img src="imgs/woman2.avif" alt="User" class="man" />
+								<div class="current current__pink">
+									<ion-icon class="sparkle" name="sparkles"></ion-icon>
+								</div>
+								<div class="duration duration__white">
+									<p class="small-headings pink-heading">3 weeks left</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="heading__testimonials">
+						<div class="heading__testimonials-one heading__testimonials-violet">
+							<div class="heading__testimonials--one-date">
+								<h4 class="heading-tertiary">July 5,2020</h4>
+								<ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
+							</div>
+							<p class="date name">Mobile App</p>
+							<p class="small-headings light">Prototyping</p>
+							<p class="small-headings">Progress</p>
+							<div class="bar1"></div>
+							<div class="bar2 bar2__violet"></div>
+							<span class="small-headings right">30%</span>
+							<div class="imgs">
+								<img src="imgs/man2.avif" alt="User" class="man" />
+								<img src="imgs/woman2.avif" alt="User" class="man" />
+								<div class="current current__green">
+									<ion-icon class="sparkle" name="sparkles"></ion-icon>
+								</div>
+								<div class="duration duration__white">
+									<p class="small-headings violet-heading">3 weeks left</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="heading__testimonials">
+						<div class="heading__testimonials-two heading__testimonials-wheat">
+							<div class="heading__testimonials--one-date">
+								<h4 class="heading-tertiary">July 5,2020</h4>
+								<ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
+							</div>
+							<p class="date name">Mobile App</p>
+							<p class="small-headings light">Prototyping</p>
+							<p class="small-headings">Progress</p>
+							<div class="bar1"></div>
+							<div class="bar2 bar2__wheat"></div>
+							<span class="small-headings right">30%</span>
+							<div class="imgs">
+								<img src="imgs/man2.avif" alt="User" class="man" />
+								<img src="imgs/woman2.avif" alt="User" class="man" />
+								<div class="current current__green">
+									<ion-icon class="sparkle" name="sparkles"></ion-icon>
+								</div>
+								<div class="duration duration__white">
+									<p class="small-headings wheat-heading">3 weeks left</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="heading__testimonials">
+						<div class="heading__testimonials-one">
+							<div class="heading__testimonials--one-date">
+								<h4 class="heading-tertiary">July 2,2020</h4>
+								<ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
+							</div>
+							<p class="date name">Web Designing</p>
+							<p class="small-headings light">Prototyping</p>
+							<p class="small-headings">Progress</p>
+							<div class="bar1"></div>
+							<div class="bar2 bar2__blue"></div>
+							<span class="small-headings right">90%</span>
+							<div class="imgs">
+								<img src="imgs/man1.avif" alt="User" class="man" />
+								<img src="imgs/woman1.avif" alt="User" class="man" />
+								<div class="current current__blue">
+									<ion-icon class="sparkle" name="sparkles"></ion-icon>
+								</div>
+								<div class="duration duration__blue">
+									<p class="small-headings blue-heading">2 days left</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="heading__testimonials">
+						<div class="heading__testimonials-two">
+							<div class="heading__testimonials--one-date">
+								<h4 class="heading-tertiary">July 5,2020</h4>
+								<ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
+							</div>
+							<p class="date name">Mobile App</p>
+							<p class="small-headings light">Prototyping</p>
+							<p class="small-headings">Progress</p>
+							<div class="bar1"></div>
+							<div class="bar2 bar2__orange"></div>
+							<span class="small-headings right">30%</span>
+							<div class="imgs">
+								<img src="imgs/man2.avif" alt="User" class="man" />
+								<img src="imgs/woman2.avif" alt="User" class="man" />
+								<div class="current current__orange">
+									<ion-icon class="sparkle" name="sparkles"></ion-icon>
+								</div>
+								<div class="duration duration__white">
+									<p class="small-headings orange-heading">3 weeks left</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="heading__testimonials">
+						<div class="heading__testimonials-one">
+							<div class="heading__testimonials--one-date">
+								<h4 class="heading-tertiary">July 2,2020</h4>
+								<ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
+							</div>
+							<div class="date name">Web Designing</div>
+							<div class="small-headings light">Prototyping</div>
+							<div class="small-headings">Progress</div>
+							<div class="bar1"></div>
+							<div class="bar2 bar2__blue"></div>
+							<div class="small-headings right">90%</div>
+							<div class="imgs">
+								<img src="imgs/man1.avif" alt="User" class="man" />
+
+								<img src="imgs/woman1.avif" alt="User" class="man" />
+							</div>
+
+							<div class="current current__blue">
+								<ion-icon class="sparkle" name="sparkles"></ion-icon>
+							</div>
+							<div class="duration duration__blue">
+								<p class="small-headings blue-heading">2 days left</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="heading__testimonials">
+						<div class="heading__testimonials-two">
+							<div class="heading__testimonials--one-date">
+								<h4 class="heading-tertiary">July 5,2020</h4>
+								<ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
+							</div>
+							<div class="date name">Mobile app</div>
+							<div class="small-headings light">Shopping</div>
+							<div class="small-headings">Progress</div>
+							<div class="bar1"></div>
+							<div class="bar2 bar2__orange"></div>
+							<div class="small-headings right">30%</div>
+							<div class="imgs">
+								<img src="imgs/man2.avif" alt="User" class="man" />
+
+								<img src="imgs/woman2.avif" alt="User" class="man" />
+								<div class="current current__orange">
+									<ion-icon class="sparkle" name="sparkles"></ion-icon>
+								</div>
+								<div class="duration duration__white">
+									<p class="small-headings orange-heading">3 week left</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="heading__testimonials">
+						<div class="heading__testimonials-one heading__testimonials-green">
+							<div class="heading__testimonials--one-date">
+								<h4 class="heading-tertiary">July 10,2020</h4>
+								<ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
+							</div>
+							<div class="date name">Dshboard</div>
+							<div class="small-headings light">Medical</div>
+							<div class="small-headings">Progress</div>
+							<div class="bar1"></div>
+							<div class="bar2 bar2__green"></div>
+							<div class="small-headings right">50%</div>
+							<div class="imgs">
+								<img src="imgs/man1.avif" alt="User" class="man" />
+
+								<img src="imgs/woman1.avif" alt="User" class="man" />
+              </div>
+								<div class="current current__green">
+									<ion-icon class="sparkle" name="sparkles"></ion-icon>
+								</div>
+								<div class="duration duration__white">
+									<p class="small-headings green-heading">3 weeks left</p>
+								</div>							
+						</div>
           </div>
-        </div>
-        <div class="heading__box">
-          <div class="heading__projects">
-            <h2 class="head__secondary">Projects</h2>
-            <div class="date">July, 2020</div>
 
-            
-          </div>
+						<div class="heading__testimonials">
+							<div class="heading__testimonials-two heading__testimonials-pink">
+								<div class="heading__testimonials--one-date">
+									<h4 class="heading-tertiary">July 15,2020</h4>
+									<ion-icon
+										class="dot_menu"
+										name="ellipsis-vertical"
+									></ion-icon>
+								</div>
+								<div class="date name">Web Designing</div>
+								<div class="small-headings light">Wireframing</div>
+								<div class="small-headings">Progress</div>
+								<div class="bar1"></div>
+								<div class="bar2 bar2__pink"></div>
+								<div class="small-headings right">20%</div>
+								<div class="imgs">
+									<img src="imgs/man2.avif" alt="User" class="man" />
 
-
-          <div class="heading__details">
-            <div class="heading__details-first">
-              <div class="heading__details-one">
-            
-                <div class="heading__details-num--one">
-                  <div class="number"><span >45</span></div>
-                  <div class="heading-tertiary--dot"><h4 class="heading-tertiary heading-tertiary-dot">In progress </h4>
-                  <h4 class="heading-tertiary heading-tertiary-dot">&SmallCircle; </h4></div>
-                </div>
-
-                <div class="heading__details-num--one">
-                  <div class="number"><span >12</span></div>
-                  <div class="heading-tertiary--dot"><h4 class="heading-tertiary heading-tertiary-dot">In progress </h4>
-                  <h4 class="heading-tertiary heading-tertiary-dot">&SmallCircle; </h4></div>
-                </div>
-
-                <div class="heading__details-num--one">
-                  <div class="number"><span >10</span></div>
-                  <div class="heading-tertiary--dot"><h4 class="heading-tertiary heading-tertiary-dot">Upcoming </h4>
-                  <h4 class="heading-tertiary heading-tertiary-dot">&SmallCircle; </h4></div>
-                </div>
-                <div class="heading__details-num--one">
-                  <div class="number"><span >67</span></div>
-                  <div class="heading-tertiary--dot"><h4 class="heading-tertiary heading-tertiary-dot">Total projects </h4>
-                  <h4 class="heading-tertiary heading-tertiary-dot">&SmallCircle; </h4></div>
-                </div>
-              </div>
-              <div class="heading__details-two">
-                <ion-icon class="heading__details-two--items" name="menu-outline"></ion-icon>
-                <ion-icon class="heading__details-two--items" name="grid-outline"></ion-icon>
-              </div>
-            </div>
-          </div>
-
-          
-
-          <div class="heading__testimonials">
-            <div class="heading__testimonials-one">
-              <div class="heading__testimonials--one-date">
-                <h4 class="heading-tertiary">July 2,2020</h4>
-                <ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
-              </div>
-              <div class="date name">Web Designing</div>
-              <div class="small-headings light">Prototyping</div>
-              <div class="small-headings">Progress</div>
-              <div class="bar1"></div>
-              <div class="bar2 bar2__blue"></div>
-              <div class="small-headings right">90%</div>
-              <div class="imgs">
-                <img src="imgs/man1.avif" alt="User" class="man" />
-
-                <img src="imgs/woman1.avif" alt="User" class="man" />
-                <div class="current current__blue">
-                  <ion-icon class="sparkle" name="sparkles"></ion-icon>
-                </div>
-                <div class="duration duration__blue">
-                  <p class="small-headings blue-heading">2 days left</p>
-                </div>
-              </div>
-              
-            </div>
-
-          <div class="heading__testimonials">
-             <div class="heading__testimonials-two">
-              <div class="heading__testimonials--one-date">
-                <h4 class="heading-tertiary">July 5,2020</h4>
-                  <ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
-              </div>
-              <div class="date name">Mobile app</div>
-              <div class="small-headings light">Shopping</div>
-              <div class="small-headings">Progress</div>
-              <div class="bar1"></div>
-              <div class="bar2 bar2__orange"></div>
-              <div class="small-headings right">30%</div>
-              <div class="imgs">
-              <img src="imgs/man2.avif" alt="User" class="man" />
-  
-                <img src="imgs/woman2.avif" alt="User" class="man" />
-                <div class="current current__orange">
-                  <ion-icon class="sparkle" name="sparkles"></ion-icon>
-                </div>
-                <div class="duration duration__white">
-                  <p class="small-headings orange-heading">3 week left</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="heading__testimonials">
-            <div class="heading__testimonials-one heading__testimonials-green">
-              <div class="heading__testimonials--one-date">
-                <h4 class="heading-tertiary">July 10,2020</h4>
-                <ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
-              </div>
-              <div class="date name">Dshboard</div>
-              <div class="small-headings light">Medical</div>
-              <div class="small-headings">Progress</div>
-              <div class="bar1"></div>
-              <div class="bar2 bar2__green"></div>
-              <div class="small-headings right">50%</div>
-              <div class="imgs">
-                <img src="imgs/man1.avif" alt="User" class="man" />
-
-              <img src="imgs/woman1.avif" alt="User" class="man" />
-              <div class="current current__green">
-                <ion-icon class="sparkle" name="sparkles"></ion-icon>
-              </div>
-              <div class="duration duration__white">
-                <p class="small-headings green-heading">3 weeks left</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="heading__testimonials">
-            <div class="heading__testimonials-two heading__testimonials-pink">
-              <div class="heading__testimonials--one-date">
-                <h4 class="heading-tertiary">July 15,2020</h4>
-                  <ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
-              </div>
-              <div class="date name">Web Designing</div>
-              <div class="small-headings light">Wireframing</div>
-              <div class="small-headings">Progress</div>
-              <div class="bar1"></div>
-              <div class="bar2 bar2__pink"></div>
-              <div class="small-headings right">20%</div>
-              <div class="imgs">
-              <img src="imgs/man2.avif" alt="User" class="man" />
-   
-                <img src="imgs/woman2.avif" alt="User" class="man" />
-                <div class="current current__pink">
-                  <ion-icon class="sparkle" name="sparkles"></ion-icon>
-                </div>
-                <div class="duration duration__white">
-                  <p class="small-headings pink-heading">3 week left</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="heading__testimonials">
-            <div class="heading__testimonials-one heading__testimonials-violet">
-              <div class="heading__testimonials--one-date">
-                <h4 class="heading-tertiary">July 20,2020</h4>
-                <ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
-              </div>
-            </div>
-          </div>
-
-          <div class="heading__testimonials">
-            <div class="heading__testimonials-two heading__testimonials-wheat">
-              <div class="heading__testimonials--one-date">
-                <h4 class="heading-tertiary">July 25,2020</h4>
-                <ion-icon class="dot_menu" name="ellipsis-vertical"></ion-icon>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-chats">
+									<img src="imgs/woman2.avif" alt="User" class="man" />
+								</div>
+								<div class="current current__pink">
+									<ion-icon class="sparkle" name="sparkles"></ion-icon>
+								</div>
+								<div class="duration duration__white">
+									<p class="small-headings pink-heading">3 week left</p>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</section>
+		<!-- <section class="section-chats">
       <div class="nav">
         <ion-icon class="nav__icon" name="add-circle"></ion-icon>
         <ion-icon class="nav__notification" name="notifications-outline"></ion-icon>
@@ -313,13 +524,8 @@
               
               
             </div>
-        </div>
-
-        
-        
-
-        
+          </div>   
       </div>
-    </section>
-  </body>
+    </section> -->
+	</body>
 </html>

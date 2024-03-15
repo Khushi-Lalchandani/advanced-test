@@ -29,87 +29,43 @@
 }
 
 .heading__testimonials {
-	width: 100%;
-
 	&-one {
 		float: left;
-		width: 45%;
+		width: 48%;
 		height: auto;
 		text-align: left;
-		clear: both;
 		box-shadow: 0 0 10px rgba($color-black, 0.2);
 		border-radius: 16px;
 		padding: 0.8rem 0.7rem 0.8rem 0.8rem;
+		margin-bottom: 3.2rem;
 	}
 
 	&-two {
-		transform: translateY(-14rem);
 		float: right;
-		clear: both;
-
-		width: 45%;
+		width: 48%;
 		height: auto;
 		text-align: left;
 		box-shadow: 0 0 10px rgba($color-black, 0.2);
 		border-radius: 16px;
 		padding: 0.8rem 0.7rem 0.8rem 0.8rem;
 		background-color: rgba($color-orange, 0.2);
+		margin-bottom: 3.2rem;
 	}
 
 	&-green {
-		float: left;
-		width: 45%;
-		height: auto;
-		text-align: left;
-		clear: both;
-		box-shadow: 0 0 10px rgba($color-black, 0.2);
-		border-radius: 16px;
-		padding: 0.8rem 0.7rem 0.8rem 0.8rem;
-		transform: translateY(-12rem);
 		background-color: $color-green-light;
 	}
 
 	&-pink {
-		transform: translateY(-25.5rem);
-		float: right;
-		width: 45%;
-		height: auto;
-		text-align: left;
-		clear: both;
-		box-shadow: 0 0 10px rgba($color-black, 0.2);
-		border-radius: 16px;
-		padding: 0.8rem 0.7rem 0.8rem 0.8rem;
 		background-color: $color-pink-light;
 	}
 
 	&-violet {
-		float: left;
-		width: 45%;
-		height: auto;
-		text-align: left;
-		clear: both;
-		box-shadow: 0 0 10px rgba($color-black, 0.2);
-		border-radius: 16px;
-		padding: 0.8rem 0.7rem 0.8rem 0.8rem;
-		transform: translateY(-24rem);
-		background-color: #e9e7fd;
-		border-bottom-left-radius: 0px;
-		border-bottom-right-radius: 0px;
+		background-color: $color-violet;
 	}
 
 	&-wheat {
-		float: right;
-		width: 45%;
-		height: auto;
-		text-align: left;
-		clear: both;
-		box-shadow: 0 0 10px rgba($color-black, 0.2);
-		border-radius: 16px;
-		padding: 0.8rem 0.7rem 0.8rem 0.8rem;
-		transform: translateY(-27.1rem);
 		background-color: $color-wheat;
-		border-bottom-left-radius: 0px;
-		border-bottom-right-radius: 0px;
 	}
 }
 .right {

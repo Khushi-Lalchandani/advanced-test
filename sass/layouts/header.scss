@@ -1,5 +1,4 @@
 .heading {
-	// padding: 0 3rem;
 	margin: 0 3rem;
 
 	&__box {
@@ -8,20 +7,24 @@
 		background-color: $color-white;
 		border-radius: 16px;
 		padding: 2rem;
-		height: 95%;
+		overflow-y: scroll;
+		height: 50rem;
 	}
+
 	&__projects {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-bottom: 3rem;
+		margin-bottom: 2rem;
 	}
 }
 .header {
 	padding: 0 3rem;
 	display: flex;
 	justify-content: space-between;
-	gap: 4rem;
+	margin-bottom: 3rem;
+	// Temporary
+	gap: 5rem;
 	&__primary {
 		font-size: 2rem;
 	}
