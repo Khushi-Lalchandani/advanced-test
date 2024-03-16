@@ -10,6 +10,7 @@ html {
 }
 body {
 	background-color: $color-background-primary;
+	width: 120rem;
 }
 .project {
 	border-radius: 50px;
@@ -17,7 +18,6 @@ body {
 	border: 1px solid black;
 	background-color: $color-background;
 	display: flex;
-	width: 120rem;
 
 	&__main {
 		display: flex;
@@ -28,36 +28,50 @@ body {
 	}
 }
 .section-chats {
-	// position: absolute;
-	// top: 0;
-	// right: 0;
-	// padding: 5rem;
-	// transform: translate(1rem, -0.5rem);
-	// width: 33rem;
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 54rem;
+}
+.section-chats::-webkit-scrollbar-thumb {
+	background-color: $color-background-primary;
+	border-radius: 10px;
+}
+.section-chats::-webkit-scrollbar {
+	width: 6px;
 }
 .nav {
 	display: flex;
-	gap: 1rem;
+	gap: 1.4rem;
 	justify-content: center;
 	align-items: center;
-	transform: translateX(2.5rem);
 	margin-bottom: 2.4rem;
+	margin-left: auto;
 
 	&__icon {
-		font-size: 1.8rem;
+		font-size: 2rem;
+		&:hover {
+			cursor: pointer;
+		}
 	}
 
 	&__notification {
-		font-size: 1.6rem;
-		position: relative;
+		font-size: 2rem;
+		&:hover {
+			cursor: pointer;
+		}
 	}
 	&__line {
-		font-size: 2rem;
+		font-size: 2.4rem;
 		font-weight: light;
 		color: $color-gray;
 	}
 	&__name {
-		font-size: 1.2rem;
+		font-size: 1.6rem;
 		font-weight: bold;
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
 }

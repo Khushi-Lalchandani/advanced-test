@@ -23,6 +23,10 @@
 		&--items {
 			font-size: 1.8rem;
 			font-weight: bolder;
+
+			&:hover {
+				cursor: pointer;
+			}
 		}
 	}
 }

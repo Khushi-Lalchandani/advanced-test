@@ -45,8 +45,7 @@
 	&__icon1 {
 		color: #fff;
 		margin-bottom: 3rem;
-		position: relative;
-		z-index: 1;
+
 		padding: 1rem;
 		border-radius: 50%;
 		background-color: black;
@@ -65,18 +64,28 @@
 	gap: 0.6rem;
 
 	&-search {
-		font-size: 1rem;
+		font-size: 1.6rem;
 		color: $color-gray-dark;
 		font-weight: bold;
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
 
 	&-ellipses {
 		font-size: 1rem;
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
 }
-.special-icon {
-	font-size: 1rem;
-}
+
 .icon-star {
-	font-size: 1rem;
+	font-size: 1.6rem;
+
+	&:hover {
+		fill: $color-gray-dark;
+	}
 }

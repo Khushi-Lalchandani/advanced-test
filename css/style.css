@@ -9,40 +9,58 @@ html {
   overflow-x: hidden; }
 
 body {
-  background-color: #f3f6fd; }
+  background-color: #f3f6fd;
+  width: 120rem; }
 
 .project {
   border-radius: 50px;
   padding: 2rem;
   border: 1px solid black;
   background-color: #e9e7fd;
-  display: flex;
-  width: 120rem; }
+  display: flex; }
   .project__main {
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
     align-items: center; }
 
+.section-chats {
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 54rem; }
+
+.section-chats::-webkit-scrollbar-thumb {
+  background-color: #f3f6fd;
+  border-radius: 10px; }
+
+.section-chats::-webkit-scrollbar {
+  width: 6px; }
+
 .nav {
   display: flex;
-  gap: 1rem;
+  gap: 1.4rem;
   justify-content: center;
   align-items: center;
-  transform: translateX(2.5rem);
-  margin-bottom: 2.4rem; }
+  margin-bottom: 2.4rem;
+  margin-left: auto; }
   .nav__icon {
-    font-size: 1.8rem; }
+    font-size: 2rem; }
+    .nav__icon:hover {
+      cursor: pointer; }
   .nav__notification {
-    font-size: 1.6rem;
-    position: relative; }
+    font-size: 2rem; }
+    .nav__notification:hover {
+      cursor: pointer; }
   .nav__line {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: light;
     color: #bbb; }
   .nav__name {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bold; }
+    .nav__name:hover {
+      cursor: pointer; }
 
 .menu {
   border-radius: 50%; }
@@ -79,8 +97,6 @@ body {
   .tab__icon1 {
     color: #fff;
     margin-bottom: 3rem;
-    position: relative;
-    z-index: 1;
     padding: 1rem;
     border-radius: 50%;
     background-color: black; }
@@ -96,23 +112,28 @@ body {
   display: flex;
   gap: 0.6rem; }
   .flex__icons-search {
-    font-size: 1rem;
+    font-size: 1.6rem;
     color: #888;
     font-weight: bold; }
+    .flex__icons-search:hover {
+      cursor: pointer; }
   .flex__icons-ellipses {
     font-size: 1rem; }
-
-.special-icon {
-  font-size: 1rem; }
+    .flex__icons-ellipses:hover {
+      cursor: pointer; }
 
 .icon-star {
-  font-size: 1rem; }
+  font-size: 1.6rem; }
+  .icon-star:hover {
+    fill: #888; }
 
 .search__bar {
   font-size: 1.6rem;
   border-radius: 20px;
   padding: 0.6rem;
   border: 1px solid #000; }
+  .search__bar:hover {
+    cursor: pointer; }
 
 .bar1 {
   margin-top: 1rem;
@@ -187,36 +208,42 @@ body {
     background-color: #fff; }
 
 .nav__user {
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%; }
 
 .user1 {
-  height: 2.8rem;
-  width: 2.8rem;
-  border-radius: 50%; }
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  box-sizing: border-box; }
 
-.flex2 {
+.flex2_one {
   display: flex;
-  flex-direction: column;
-  gap: 0.4rem; }
-  .flex2_one {
+  gap: 4%;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  border-bottom: 1px solid #888;
+  box-sizing: border-box; }
+  .flex2_one:hover {
+    border-radius: 12px; }
+  .flex2_one:hover {
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0.4rem 2rem;
+    height: max-content;
+    text-wrap: wrap;
+    transform: scale(1.09); }
+  .flex2_one-one {
     display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    padding: 1.2rem; }
-    .flex2_one:not(:last-child) {
-      border-bottom: 1px solid #888; }
-    .flex2_one-one {
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem; }
-      .flex2_one-one--text {
-        font-size: 0.8rem;
-        font-weight: 600;
-        color: #151522;
-        padding: 0 0.8rem; }
+    flex-direction: column;
+    gap: 0.8rem; }
+    .flex2_one-one--text {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #151522;
+      padding: 0 0.8rem; }
 
 .inner-flex {
   display: flex;
@@ -336,7 +363,7 @@ body {
   margin-bottom: 0.3rem; }
 
 .date1 {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   text-align: right;
   padding: 0 0.8rem;
   color: #888; }
@@ -360,6 +387,8 @@ body {
     .heading__details-two--items {
       font-size: 1.8rem;
       font-weight: bolder; }
+      .heading__details-two--items:hover {
+        cursor: pointer; }
 
 .heading__testimonials--one-date {
   display: flex;
