@@ -18,13 +18,30 @@ body {
 	border: 1px solid black;
 	background-color: $color-background;
 	display: flex;
+	@media screen and (max-width: 56.25em) {
+		height: 80rem;
+	}
+
+	@media screen and (max-width: 37.5em) {
+		height: 120rem;
+		padding: 4rem 1rem;
+	}
+
+	@media screen and (max-width: 25em) {
+		width: 100%;
+		height: 140rem;
+		padding: 3rem;
+	}
 
 	&__main {
 		display: flex;
 		flex-direction: column;
 		gap: 3.2rem;
-
 		align-items: center;
+
+		@media screen and (max-width: 37.5em) {
+			gap: 5rem;
+		}
 	}
 }
 .section-chats {
@@ -32,6 +49,14 @@ body {
 	overflow-y: scroll;
 	overflow-x: hidden;
 	height: 54rem;
+
+	@media screen and (max-width: 56.25em) {
+		height: 100%;
+	}
+
+	@media screen and (max-width: 37.5em) {
+		display: none;
+	}
 }
 .section-chats::-webkit-scrollbar-thumb {
 	background-color: $color-background-primary;
@@ -52,13 +77,55 @@ body {
 		font-size: 2rem;
 		&:hover {
 			cursor: pointer;
+			transform: scale(1.6);
+		}
+
+		@media screen and (max-width: 56.25em) {
+			font-size: 2.6rem;
+		}
+
+		@media screen and (max-width: 37.5em) {
+			font-size: 4.8rem;
 		}
 	}
 
 	&__notification {
 		font-size: 2rem;
+
+		&::after {
+			content: "";
+			background-color: red;
+			position: relative;
+			top: -1.9rem;
+			left: 1.2rem;
+			display: block;
+			height: 0.7rem;
+			width: 0.7rem;
+			border-radius: 50%;
+
+			@media screen and (max-width: 56.25em) {
+				top: -2.2rem;
+				left: 1.5rem;
+			}
+
+			@media screen and (max-width: 37.5em) {
+				height: 1.2rem;
+				width: 1.2rem;
+				top: -4.2rem;
+				left: 2.4rem;
+			}
+		}
 		&:hover {
 			cursor: pointer;
+			transform: scale(1.6);
+		}
+
+		@media screen and (max-width: 56.25em) {
+			font-size: 2.6rem;
+		}
+
+		@media screen and (max-width: 37.5em) {
+			font-size: 4.4rem;
 		}
 	}
 	&__line {
@@ -70,8 +137,24 @@ body {
 		font-size: 1.6rem;
 		font-weight: bold;
 
+		@media screen and (max-width: 56.25em) {
+			font-size: 2rem;
+		}
+		@media screen and (max-width: 37.5em) {
+			font-size: 3.6rem;
+		}
+
 		&:hover {
 			cursor: pointer;
 		}
+	}
+}
+
+.none {
+	display: none;
+	@media screen and (max-width: 37.5em) {
+		display: flex;
+		gap: 1.5rem;
+		margin-left: 55%;
 	}
 }
