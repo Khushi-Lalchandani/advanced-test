@@ -3,7 +3,7 @@
 		display: flex;
 		gap: 4%;
 		align-items: center;
-		justify-content: center;
+		// justify-content: center;
 		margin: 1rem;
 		border-bottom: 1px solid $color-gray-dark;
 		box-sizing: border-box;
@@ -29,13 +29,6 @@
 				font-weight: 500;
 				color: $color-gray-dark-1;
 				padding: 0 0.8rem;
-
-				@media screen and (max-width: 56.25em) {
-					font-size: 1.8rem;
-					line-height: 1.5;
-					letter-spacing: 0.8px;
-					font-weight: 550;
-				}
 			}
 		}
 	}

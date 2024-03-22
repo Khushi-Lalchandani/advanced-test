@@ -14,12 +14,6 @@
 		&:focus {
 			transform: scale(1.09);
 		}
-
-		@media screen and (max-width: 37.5em) {
-			padding: 1.6rem;
-			font-size: 3rem;
-			border-radius: 30px;
-		}
 	}
 }
 
@@ -29,10 +23,6 @@
 	width: 100%;
 	border-radius: 12px;
 	background-color: $color-gray-light;
-
-	@media screen and (max-width: 37.5em) {
-		height: 1.4rem;
-	}
 }
 .bar2 {
 	height: 0.8rem;
@@ -63,10 +53,5 @@
 	&__violet {
 		width: 45%;
 		background-color: $color-violet-dark;
-	}
-
-	@media screen and (max-width: 37.5em) {
-		height: 1.4rem;
-		transform: translateY(-1.4rem);
 	}
 }

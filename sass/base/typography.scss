@@ -1,13 +1,7 @@
 .head__secondary {
 	font-size: 2rem;
 	font-weight: bolder;
-
-	@media screen and (max-width: 56.25em) {
-		font-size: 2.2rem;
-	}
-	@media screen and (max-width: 37.5em) {
-		font-size: 4.4rem;
-	}
+	text-wrap: nowrap;
 }
 .name {
 	text-align: center;
@@ -16,50 +10,22 @@
 .date {
 	font-size: 2rem;
 	font-weight: bold;
-
-	@media screen and (max-width: 56.25em) {
-		font-size: 2.2rem;
-	}
-	@media screen and (max-width: 37.5em) {
-		font-size: 3rem;
-	}
 }
 .small-headings {
 	font-size: 1.6rem;
 	font-weight: bold;
 	margin-top: 1rem;
-	@media screen and (max-width: 56.25em) {
-		font-size: 1.9rem;
-	}
-
-	@media screen and (max-width: 37.5em) {
-		font-size: 2.4rem;
-		margin-top: 1.4rem;
-	}
 
 	&--center {
 		font-size: 1.6rem;
 		margin-top: 0.5rem;
-
-		@media screen and (max-width: 37.5em) {
-			font-size: 3rem;
-			letter-spacing: 0.6px;
-			padding: 1.2rem 1.4rem;
-			margin: 0;
-		}
+		text-wrap: nowrap;
 	}
 }
 .light {
 	font-size: 1.6rem;
 	text-align: center;
 	font-weight: 500;
-	@media screen and (max-width: 56.25em) {
-		font-size: 1.9rem;
-	}
-	@media screen and (max-width: 37.5em) {
-		font-size: 2.4rem;
-		margin-top: 1.4rem;
-	}
 }
 .blue-heading {
 	color: $color-blue;
@@ -91,9 +57,7 @@
 	font-weight: bolder;
 	margin-bottom: 0.3rem;
 
-	@media screen and (max-width: 37.5em) {
-		font-size: 3.6rem;
-	}
+	font-size: 2.8rem;
 }
 
 .date1 {

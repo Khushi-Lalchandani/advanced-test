@@ -1,0 +1,70 @@
+@media screen and (min-width: 1550px) {
+	html {
+		font-size: 80%;
+	}
+}
+
+@media screen and (max-width: 68.75em) {
+	html {
+		font-size: 50%;
+	}
+}
+@media screen and (max-width: 56.25em) {
+	.man {
+		height: 3.2rem;
+		width: 3.2rem;
+	}
+	.current {
+		height: 3.2rem;
+		width: 3.2rem;
+	}
+	.heading__details-two {
+		padding: 1rem;
+	}
+	.heading__details-two--items {
+		font-size: 1.4rem;
+	}
+}
+@media screen and (max-width: 46.87em) {
+	.project {
+		display: grid;
+		row-gap: 2rem;
+		grid-template-columns: max-content 1fr;
+		grid-template-rows: repeat(2, 1fr);
+		width: fit-content;
+	}
+	.project__main {
+		margin-right: 2rem;
+	}
+	.header {
+		flex-direction: column;
+		gap: 2rem;
+		align-items: flex-start;
+	}
+
+	.section-chats {
+		grid-row: 2/3;
+		grid-column: 1/-1;
+	}
+	.search__bar {
+		font-size: 2rem;
+	}
+	.heading {
+		width: 100%;
+		margin: 0;
+	}
+	.nav__user {
+		height: 4rem;
+		width: 4rem;
+	}
+	.user1 {
+		height: 5rem;
+		width: 5rem;
+	}
+	.flex2_one {
+		width: 100%;
+	}
+	.flex2_one-one {
+		width: 100%;
+	}
+}
