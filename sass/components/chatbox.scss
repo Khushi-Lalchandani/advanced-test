@@ -3,26 +3,28 @@
 		display: flex;
 		gap: 4%;
 		align-items: center;
-		// justify-content: center;
+		width: 95%;
 		margin: 1rem;
-		border-bottom: 1px solid $color-gray-dark;
+		border-bottom: 1px solid $color-gray-light-1;
 		box-sizing: border-box;
+
 		&:hover {
-			border-radius: 12px;
-		}
-		&:hover {
+			border-bottom: none;
 			cursor: pointer;
 			background-color: $color-white;
-			padding: 0.4rem 2rem;
+			padding: 0.6rem 2rem;
+			border-bottom: none;
 			height: max-content;
 			text-wrap: wrap;
-			transform: scale(1.09);
+			transform: translateX(0.6rem) scale(1.09);
+			transition: all ease 0.4s;
 		}
 
 		&-one {
 			display: flex;
 			flex-direction: column;
 			gap: 0.8rem;
+			width: 100%;
 
 			&--text {
 				font-size: 1.4rem;
@@ -38,9 +40,4 @@
 	padding: 0 0.8rem;
 	justify-content: space-between;
 	align-items: center;
-}
-.flex-special {
-	background-color: $color-white;
-	border-radius: 12px;
-	transform: translateX(1.4rem) scale(1.16);
 }

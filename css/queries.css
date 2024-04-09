@@ -1,4 +1,4 @@
-@media screen and (min-width: 1550px) {
+@media screen and (min-width: 1500px) {
 	html {
 		font-size: 80%;
 	}
@@ -9,62 +9,77 @@
 		font-size: 50%;
 	}
 }
-@media screen and (max-width: 56.25em) {
-	.man {
-		height: 3.2rem;
-		width: 3.2rem;
-	}
-	.current {
-		height: 3.2rem;
-		width: 3.2rem;
-	}
-	.heading__details-two {
-		padding: 1rem;
-	}
-	.heading__details-two--items {
-		font-size: 1.4rem;
-	}
-}
-@media screen and (max-width: 46.87em) {
-	.project {
-		display: grid;
-		row-gap: 2rem;
-		grid-template-columns: max-content 1fr;
-		grid-template-rows: repeat(2, 1fr);
-		width: fit-content;
-	}
-	.project__main {
-		margin-right: 2rem;
-	}
-	.header {
-		flex-direction: column;
-		gap: 2rem;
-		align-items: flex-start;
-	}
 
-	.section-chats {
-		grid-row: 2/3;
+@media screen and (max-width: 56.25em) {
+	.project {
+		grid-template-columns: 1.8fr 1fr;
+		grid-template-rows: auto 1fr;
+	}
+	.sidebar {
 		grid-column: 1/-1;
+		grid-row: 1/2;
+		margin-bottom: 2rem;
+	}
+	.tab {
+		flex-direction: row;
+		display: flex;
+		justify-content: space-around;
+	}
+	.heading__box {
+		grid-column: 1/2;
+		grid-row: 2/3;
+		margin: 0;
+		width: 100%;
+		margin-bottom: 2rem;
+		overflow: auto;
+	}
+	.flex {
+		padding: 2rem;
 	}
 	.search__bar {
-		font-size: 2rem;
+		width: 25rem;
 	}
-	.heading {
-		width: 100%;
-		margin: 0;
+}
+@media screen and (max-width: 46.875em) {
+	body {
+		overflow-y: scroll;
 	}
-	.nav__user {
+	.project {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr 1fr;
+	}
+	.project__main {
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+	.heading__testimonials {
+		margin-bottom: 2rem;
+		overflow: auto;
+	}
+	.search {
+		display: none;
+	}
+	.none {
+		display: block;
+	}
+	.search__bar {
+		width: 70vw;
+		border: 1px solid #ddd;
+	}
+	.header {
+		padding: 0;
+	}
+	.man {
 		height: 4rem;
 		width: 4rem;
 	}
-	.user1 {
-		height: 5rem;
-		width: 5rem;
+	.heading__details-two--items {
+		font-size: 6rem;
 	}
-	.flex2_one {
-		width: 100%;
-	}
-	.flex2_one-one {
-		width: 100%;
+}
+
+@media screen and (max-width: 25em) {
+	.search__bar {
+		width: 40rem;
 	}
 }

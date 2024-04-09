@@ -1,18 +1,14 @@
 .search {
-	// margin-top: 0.6rem;
 	&__bar {
 		font-size: 1.6rem;
 		border-radius: 20px;
+		width: 30rem;
 		padding: 0.8rem;
 		border: 1px solid $color-black;
 		border-style: dotted;
 
 		&:hover {
 			cursor: pointer;
-		}
-
-		&:focus {
-			transform: scale(1.09);
 		}
 	}
 }

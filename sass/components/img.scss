@@ -61,9 +61,58 @@
 	}
 	&__blue {
 		background-color: rgba($color-blue, 0.2);
+		&:hover {
+			background-color: $color-blue;
+		}
+		&:hover p {
+			color: #fff;
+		}
 	}
-	&__white {
+	&__wheat,
+	&__violet,
+	&__green,
+	&__pink,
+	&__orange {
 		background-color: $color-white;
+	}
+	&__wheat:hover {
+		background-color: $color-wheat-dark;
+
+		p {
+			color: #fff;
+		}
+	}
+
+	&__violet:hover {
+		background-color: $color-violet-dark;
+
+		p {
+			color: #fff;
+		}
+	}
+
+	&__green:hover {
+		background-color: $color-green;
+
+		p {
+			color: #fff;
+		}
+	}
+
+	&__orange:hover {
+		background-color: $color-orange;
+
+		p {
+			color: #fff;
+		}
+	}
+
+	&__pink:hover {
+		background-color: $color-pink;
+
+		p {
+			color: #fff;
+		}
 	}
 }
 
@@ -74,11 +123,6 @@
 
 	&:hover {
 		cursor: pointer;
-		transform: scale(1.2);
-	}
-	&:hover + .nav__name {
-		color: #444;
-		font-size: 1.8rem;
 	}
 }
 .user1 {
