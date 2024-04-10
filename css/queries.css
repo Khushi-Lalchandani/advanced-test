@@ -52,6 +52,9 @@
 		gap: 1rem;
 		flex-wrap: wrap;
 	}
+	.nav {
+		margin-left: 0;
+	}
 	.heading__testimonials {
 		margin-bottom: 2rem;
 		overflow: auto;
