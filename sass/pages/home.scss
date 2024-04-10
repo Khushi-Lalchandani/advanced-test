@@ -11,6 +11,10 @@ html {
 body {
 	background-color: rgba($color-background, 0.4);
 }
+
+html::-webkit-scrollbar {
+	display: none;
+}
 .project {
 	padding: 2rem;
 	display: grid;
