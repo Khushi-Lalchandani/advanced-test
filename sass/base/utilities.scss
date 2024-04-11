@@ -35,6 +35,10 @@
 	overflow-y: auto;
 	height: 80%;
 	border-radius: 20px;
+	display: grid;
+	gap: 1rem;
+	padding: 1rem 1.6rem;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	&::-webkit-scrollbar {
 		display: none;
 	}
@@ -46,19 +50,49 @@
 
 	&-one {
 		float: left;
-		width: 47%;
 		height: auto;
 		text-align: left;
 		box-shadow: 0 0 10px rgba($color-black, 0.2);
-		border-radius: 16px;
+		border-radius: 30px;
 		padding: 1.8rem 1.2rem 1.8rem 1.8rem;
 		margin-bottom: 6rem;
-		transition: transform ease-in-out 0.4s 0.1s;
+		width: 90%;
+		position: relative;
 
 		&:hover {
-			box-shadow: inset 0 0 10px rgba($color-black, 0.4);
 			cursor: pointer;
-			transform: scale(1.01);
+
+			transform: scale(1.04);
+			transition: all 0.4s;
+		}
+		&:hover::after {
+			content: "";
+			height: 0.8rem;
+			position: relative;
+			display: inline-block;
+			transition: all 0.4s;
+
+			width: 95%;
+			border-bottom-right-radius: 14px;
+			border-bottom-left-radius: 14px;
+			background-color: inherit;
+			top: 4rem;
+		}
+
+		&:hover::before {
+			content: "";
+			height: 0.8rem;
+			display: inline-block;
+			position: relative;
+			width: 80%;
+			transition: all 0.4s;
+
+			left: 0.4rem;
+			border-bottom-right-radius: 14px;
+			border-bottom-left-radius: 14px;
+			background-color: inherit;
+			top: calc(100% + 4.2rem);
+			left: 2.2rem;
 		}
 	}
 
@@ -68,16 +102,93 @@
 		height: auto;
 		text-align: left;
 		box-shadow: 0 0 10px rgba($color-black, 0.2);
-		border-radius: 16px;
+		border-radius: 30px;
 		padding: 1.8rem 1.2rem 1.8rem 1.8rem;
 		background-color: rgba($color-orange, 0.2);
 		margin-bottom: 6rem;
-		transition: all ease-in-out 0.2s;
+
+		width: 90%;
 
 		&:hover {
-			box-shadow: inset 0 0 10px rgba($color-black, 0.4);
 			cursor: pointer;
-			transform: scale(1.01);
+			transition: all 0.4s;
+			transform: scale(1.04);
+		}
+		&:hover::after {
+			content: "";
+			height: 0.8rem;
+			position: relative;
+			display: inline-block;
+			width: 95%;
+			transition: all 0.4s;
+
+			border-bottom-right-radius: 14px;
+			border-bottom-left-radius: 14px;
+			background-color: inherit;
+			top: 4rem;
+		}
+
+		&:hover::before {
+			content: "";
+			height: 0.8rem;
+			display: inline-block;
+			position: relative;
+			transition: all 0.4s;
+
+			width: 80%;
+			left: 0.4rem;
+			border-bottom-right-radius: 14px;
+			border-bottom-left-radius: 14px;
+			background-color: inherit;
+			top: calc(100% + 4.2rem);
+			left: 2.2rem;
+		}
+	}
+
+	&-blue {
+		float: left;
+		height: auto;
+		text-align: left;
+		box-shadow: 0 0 10px rgba($color-black, 0.2);
+		border-radius: 30px;
+		padding: 1.8rem 1.2rem 1.8rem 1.8rem;
+		margin-bottom: 6rem;
+		width: 90%;
+		position: relative;
+
+		&:hover {
+			cursor: pointer;
+
+			transform: scale(1.04);
+			transition: all 0.4s;
+		}
+		&:hover::after {
+			content: "";
+			height: 0.8rem;
+			position: relative;
+			display: inline-block;
+			transition: all 0.4s;
+			width: 95%;
+			border-bottom-right-radius: 14px;
+			border-bottom-left-radius: 14px;
+			background-color: $color-blue;
+			top: 4rem;
+		}
+
+		&:hover::before {
+			content: "";
+			height: 0.8rem;
+			display: inline-block;
+			position: relative;
+			width: 80%;
+			transition: all 0.4s;
+
+			left: 0.4rem;
+			border-bottom-right-radius: 14px;
+			border-bottom-left-radius: 14px;
+			background-color: $color-blue;
+			top: calc(100% + 4.2rem);
+			left: 2.2rem;
 		}
 	}
 

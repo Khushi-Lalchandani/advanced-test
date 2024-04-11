@@ -40,7 +40,7 @@
 		width: 25rem;
 	}
 }
-@media screen and (max-width: 46.875em) {
+@media screen and (max-width: 52.56em) {
 	body {
 		overflow-y: scroll;
 	}
@@ -55,12 +55,27 @@
 	.nav {
 		margin-left: 0;
 	}
+	.heading {
+		width: 100vw;
+		padding: 0;
+		margin: 2rem;
+		overflow-x: hidden;
+	}
+
 	.heading__testimonials {
 		margin-bottom: 2rem;
-		overflow: auto;
+		/* overflow: auto; */
+		display: flex;
+		grid-gap: 0;
+		gap: 2.4rem;
+		overflow-x: scroll;
+		height: min-content;
 	}
 	.search {
 		display: none;
+	}
+	.heading__details-one {
+		flex-wrap: wrap;
 	}
 	.none {
 		display: block;
@@ -76,13 +91,23 @@
 		height: 4rem;
 		width: 4rem;
 	}
-	.heading__details-two--items {
-		font-size: 6rem;
+
+	.heading-tertiary-dot {
+		font-size: 1.2rem;
+	}
+	.number {
+		font-size: 1.6rem;
+	}
+	.heading__details-two {
+		width: auto;
 	}
 }
 
 @media screen and (max-width: 25em) {
 	.search__bar {
 		width: 40rem;
+	}
+	.hide {
+		display: none;
 	}
 }
