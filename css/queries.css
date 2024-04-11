@@ -40,7 +40,7 @@
 		width: 25rem;
 	}
 }
-@media screen and (max-width: 52.56em) {
+@media screen and (max-width: 48em) {
 	body {
 		overflow-y: scroll;
 	}
